@@ -1,5 +1,32 @@
 .header {
   &--container {
-    background: li;
+    background: $gradient;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 29px;
+    color: $mainTextColor;
+
+    &--top {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+  }
+
+  &--image {
+    width: 32px;
+    height: 27px;
+  }
+
+  &--title {
+    font-family: inherit;
+    font-size: 21px;
+  }
+
+  &--subtitle {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: normal;
   }
 }
