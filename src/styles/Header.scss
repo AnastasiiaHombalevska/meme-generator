@@ -1,6 +1,6 @@
 .header {
   &--container {
-    background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+    background: $gradient;
     display: flex;
     justify-content: space-between;
     align-items: center;
