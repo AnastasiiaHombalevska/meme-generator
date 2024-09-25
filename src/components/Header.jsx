@@ -4,13 +4,18 @@ import imageSourse from "../images/troll-face.png";
 
 export default function Header() {
   return (
-    <>
-      <div className="header--container">
-        <img src={imageSourse} alt="troll fase image" />
-        <h1>Meme Generator</h1>
+    <header className="header--container">
+      <div className="header--container--top">
+          <img 
+            src={imageSourse}
+            alt="troll fase image"
+            className="header--image"
+          />
+
+        <h2 className="header--title">Meme Generator</h2>
       </div>
 
-      <h2>React Course - Project 3</h2>
-    </>
+      <h3 className="header--subtitle">React Course - Project 3</h3>
+    </header>
   )
 }
