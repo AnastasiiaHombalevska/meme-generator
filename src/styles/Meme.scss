@@ -1,51 +1,68 @@
 .form {
   display: grid;
-  grid-template: 50% 50% / 1fr 1fr;
+  grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
-  padding-inline: 37px;
-  margin-block: 10px;
-  box-sizing: border-box;
-
-  &--label {
-    font-family: inherit;
-    font-size: 16px;
-    color: #374151;
-    text-align: left;
-    margin-top: 5px;
-  }
+  padding-top: 20px;
+  margin-bottom: 20px;
 
   &--input {
+    font-family: $mainFont;
     border-radius: 5px;
+    border: 1px solid $mainBorderColor;
     text-indent: 5px;
-    border: 1px solid #d5d4d8;
-    width: 100%;
-    height: 35px;
-    margin-top: 5px;
-    box-sizing: border-box;
-
-
-    &::placeholder {
-      font-family: inherit;
-      font-size: 14px;
-      color: #6b7280;
-    }
   }
 
-  &--btn {
-    color: $mainTextColor;
-    font-family: $mainFont;
-    font-size: 16px;
-    background: $gradient;
-    border: none;
-    border-radius: 5px;
+  &--button {
     grid-column: 1 / -1;
-    padding-block: 11px;
-
+    font-family: $mainFont;
+    border-radius: 5px;
+    background: $gradient;
+    color: $mainColor;
+    border: none;
     cursor: pointer;
   }
 }
 
-.image {
-  max-width: 100%;
-  margin-top: 50px;
+.meme {
+  position: relative;
+
+  &--image {
+    max-width: 100%;
+    border-radius: 3px;
+  }
+
+  &--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $mainColor;
+    letter-spacing: 1px;
+
+    text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+  }
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }

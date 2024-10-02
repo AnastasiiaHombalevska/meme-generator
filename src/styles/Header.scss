@@ -1,32 +1,23 @@
 .header {
-  &--container {
-    background: $gradient;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 29px;
-    color: $mainTextColor;
-
-    &--top {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-  }
-
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: $gradient;
+  color: $mainColor;
+  padding: 20px;
+  
   &--image {
-    width: 32px;
-    height: 27px;
+    height: 100%;
+    margin-right: 6px;
   }
-
+  
   &--title {
-    font-family: inherit;
-    font-size: 21px;
+    font-size: 1.25rem;
+    margin-right: auto;
   }
-
-  &--subtitle {
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: normal;
+  
+  &--project {
+    font-size: 0.75rem;
+    font-weight: 500;
   }
 }
