@@ -1,21 +1,15 @@
-import React from "react";
-
-import imageSourse from "../images/troll-face.png";
+import React from "react"
 
 export default function Header() {
-  return (
-    <header className="header--container">
-      <div className="header--container--top">
-          <img 
-            src={imageSourse}
-            alt="troll fase image"
-            className="header--image"
-          />
-
-        <h2 className="header--title">Meme Generator</h2>
-      </div>
-
-      <h3 className="header--subtitle">React Course - Project 3</h3>
-    </header>
-  )
+    return (
+        <header className="header">
+            <img
+                src="src/images/troll-face.png" 
+                className="header--image"
+                alt="troll face icon"
+            />
+            <h2 className="header--title">Meme Generator</h2>
+            <h4 className="header--project">React Course - Project 3</h4>
+        </header>
+    )
 }
