@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 export default function Meme() {
-    const [meme, setMeme] = React.useState({
+    const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg" 
