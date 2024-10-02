@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](/meme-generator.png)
+![screenshot](/public/meme-generator.png)
 
 ## My process
 
