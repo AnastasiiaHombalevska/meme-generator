@@ -1,0 +1,17 @@
+@import "./styles/utils/utils";
+@import "styles/Header.scss";
+@import "styles/Meme.scss";
+
+#root {
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-family: $mainFont;
+  font-size: 16px;
+  font-weight: bold;
+
+  color: $mainColor;
+  background-color: $mainColor;
+}
